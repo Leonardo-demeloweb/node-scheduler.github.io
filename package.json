@@ -1,0 +1,22 @@
+{
+  "name": "node-cron-hb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Leonardo de Melo desenvolvimento 2019",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "cron": "^1.6.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.3.0",
+    "nodemailer": "^5.1.1",
+    "request": "^2.81.0"
+  }
+}
