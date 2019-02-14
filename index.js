@@ -43,13 +43,13 @@ console.log('Hoje é ' + hoje);
   }); */
 
 //Url para realização da requisição dinâmica
-const urlR = 'http://redenacionalderadio.com.br/programas/a-voz-do-brasil-completa/'+`${hoje}`+'-voz-do-brasil.mp3/@@download/file/'+`${hoje}`+'-%20-%20VOZ%20DO%20BRASIL.mp3';
+//const urlR = 'http://redenacionalderadio.com.br/programas/a-voz-do-brasil-completa/'+`${hoje}`+'-voz-do-brasil.mp3/@@download/file/'+`${hoje}`+'-%20-%20VOZ%20DO%20BRASIL.mp3';
 const url = 'http://redenacionalderadio.com.br/programas/a-voz-do-brasil-completa/15-01-19-voz-do-brasil.mp3/@@download/file/15-01-19-%20-%20VOZ%20DO%20BRASIL.mp3';
 
 //console.log(urlR);
 
 //função periódica para execução da tarefa programada
-const job = new CronJob('00 45 15 * * *', () => {
+const job = new CronJob('00 22 16 * * *', () => {
     request(url).pipe(fs.createWriteStream('Voz do Brasil.mp3'));
     console.log('Download iniciado', hoje, 'às', horas );
     //console.log(url);
